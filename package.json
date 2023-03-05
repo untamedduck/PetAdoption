@@ -6,14 +6,17 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "repository": {
     "type": "git",
-    "build": "vite build",
+    "build": "react-scripts build",
     "preview": "vite preview",
     "url": "git+https://github.com/untamedduck/PetAdoption.git"
   },
@@ -39,6 +42,7 @@
     "@tanstack/react-query": "4.10.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "6.4.1"
+    "react-router-dom": "6.4.1",
+    "react-scripts": "^5.0.1"
   }
 }
