@@ -5,10 +5,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,11 @@
     "url": "git+https://github.com/untamedduck/PetAdoption.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jared",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/untamedduck/PetAdoption/issues"
   },
-  "homepage": "https://github.com/untamedduck/PetAdoption#readme",
   "devDependencies": {
     "@vitejs/plugin-react": "^2.1.0",
     "eslint": "^8.24.0",
@@ -37,8 +37,8 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.10.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.4.1"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.4.1"
   }
 }
