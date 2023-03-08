@@ -5,7 +5,7 @@ The API uses HTTP links instead of HTTPS. Application will not load properly on 
 
 Check out here  https://untamedduck.github.io/PetAdoption/
 
-ROADMAP
+ROADMAP:
 
 Add Navbar
 
