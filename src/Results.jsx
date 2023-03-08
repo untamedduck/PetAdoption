@@ -1,6 +1,6 @@
 import Pet from "./Pet";
 
-const Results = ({ pets }) => {
+const Results = ({ pets, setRequestParams, requestParams }) => {
   return (
     <div className="search">
       {!pets.length ? (
@@ -20,6 +20,32 @@ const Results = ({ pets }) => {
           );
         })
       )}
+      <div className="pagination">
+        {/* Next page button */}
+        <button
+          onClick={() =>
+            setRequestParams((prevParams) => ({
+              ...prevParams,
+              page: prevParams.page + 1,
+            }))
+          }
+          disabled={pets.length < 9}
+        >
+          Next Page
+        </button>
+        {/* Previous page button */}
+        <button
+          onClick={() =>
+            setRequestParams((prevParams) => ({
+              ...prevParams,
+              page: prevParams.page - 1,
+            }))
+          }
+          disabled={requestParams.page === 0}
+        >
+          Previous Page
+        </button>
+      </div>
     </div>
   );
 };
