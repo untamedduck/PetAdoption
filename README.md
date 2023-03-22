@@ -3,10 +3,10 @@ Pet adoption application built in react as part of the front end masters course
 
 Check out here  https://untamedduck.github.io/PetAdoption/
 
-Added:
-Pagination
 
 ROADMAP TO ADD:
+
+~~Pagination~~
 
 Navbar
 
